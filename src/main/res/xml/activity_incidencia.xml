@@ -1,0 +1,42 @@
+<!-- activity_incidencia.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción" />
+
+    <EditText
+        android:id="@+id/ubicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ubicación" />
+
+    <Spinner
+        android:id="@+id/urgencia_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/guardar_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Incidencia" />
+
+    <Button
+        android:id="@+id/ver_incidencias_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Incidencias" />
+</LinearLayout>

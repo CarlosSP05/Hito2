@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ecocity</string>
+    <string name="google_maps_api_key">AIzaSyDi3PbSQkwXAtcnB_9z4aDx7cppMSUmNc0</string>
+
+    <string-array name="niveles_urgencia">
+        <item>Baja</item>
+        <item>Media</item>
+        <item>Alta</item>
+    </string-array>
+</resources>

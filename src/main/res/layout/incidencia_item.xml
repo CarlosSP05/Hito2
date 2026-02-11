@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="24dp"
+    app:cardUseCompatPadding="false"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/eco_primary"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/eco_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Título de la incidencia"
+                android:textColor="@color/eco_text_primary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_borrar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Eliminar"
+                android:padding="8dp"
+                android:tint="@color/eco_primary_dark"
+                android:src="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción de la incidencia"
+            android:textColor="@color/eco_text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/meta_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Urgencia: Alta  •  Ubicación: Centro"
+            android:textColor="@color/eco_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/fecha_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hace 1h"
+                android:textColor="@color/eco_text_secondary"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/icon_foto"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="Tiene foto"
+                android:src="@android:drawable/ic_menu_camera"
+                android:tint="@color/eco_primary"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/icon_audio"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Tiene audio"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:tint="@color/eco_accent"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

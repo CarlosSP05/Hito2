@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ecocity" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/eco_primary</item>
+        <item name="colorPrimaryVariant">@color/eco_primary_dark</item>
+        <item name="colorSecondary">@color/eco_secondary</item>
+        <item name="colorTertiary">@color/eco_accent</item>
+        <item name="android:statusBarColor">@color/eco_primary_dark</item>
+        <item name="android:navigationBarColor">@color/eco_primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@drawable/bg_app_gradient</item>
+        <item name="android:textColor">@color/eco_text_primary</item>
+        <item name="android:colorBackground">@color/eco_background</item>
+    </style>
+
+    <style name="Theme.Ecocity" parent="Base.Theme.Ecocity" />
+</resources>
